@@ -1,0 +1,61 @@
+<html>
+<head>
+     <title>Image overlay slide Top</title>
+     <style>
+.container {
+ position:relative;
+ width:50%;   
+}        
+
+.image {
+   display: block;
+   width: 500px;
+   height: 500px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #00BCBA;
+    overflow: hidden;
+    width: 500PX;
+    height:0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Slide in Overlay from the Top</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+<img src="https://i.pinimg.com/736x/fb/11/5a/fb115a965aa564e267f8e57883c0cf1c.jpg" alt="Avatar"class="image">
+<div class="overlay">
+    <div class="text">Yadav</div>
+ </div>
+</div>
+</body>
+</html>
+
+
+
+
